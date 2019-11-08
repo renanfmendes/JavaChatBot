@@ -1,0 +1,201 @@
+2019-11-07 20:15:50,115 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-11-07 20:43:49,005 [Worker-23: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:543) ~[org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_212]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_212]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_212]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-11-07 20:43:49,187 [Worker-23: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:543) ~[org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_212]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_212]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_212]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-11-07 20:43:49,337 [Worker-23: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:543) ~[org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_212]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_212]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_212]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-11-07 20:43:49,341 [Worker-23: Repository registry initialization] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.6.1.jar:3.6.1]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:543) ~[org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.12.0.20190529-1916.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_212]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_212]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_212]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.4.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.4.jar:na]
+	... 9 common frames omitted
+2019-11-07 20:43:55,685 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:43:56,799 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:43:56,802 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:43:56,804 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:43:56,805 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:43:56,832 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ChatBot/src
+2019-11-07 20:43:56,833 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ChatBot/src/test/java because it overlaps with /ChatBot/src
+2019-11-07 20:43:57,090 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-07 20:43:57,572 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:43:57,922 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ChatBot/src
+2019-11-07 20:43:57,923 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ChatBot/src/test/java because it overlaps with /ChatBot/src
+2019-11-07 20:43:58,024 [Worker-23: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-07 20:43:58,177 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:43:58,178 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:43:58,180 [Worker-24: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:43:58,181 [Worker-24: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:46:32,406 [Worker-23: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:46:32,556 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/telegrambots/4.4.0/telegrambots-4.4.0.pom
+2019-11-07 20:46:32,572 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/telegrambots/4.4.0/telegrambots-4.4.0.pom
+2019-11-07 20:46:33,957 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:46:33,982 [Worker-23: Building workspace] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-snapshot/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:46:34,212 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:46:34,213 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:46:34,215 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:46:34,216 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:46:35,062 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/telegrambots/4.4.0/telegrambots-4.4.0-sources.jar
+2019-11-07 20:46:35,078 [Worker-25: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/telegrambots/4.4.0/telegrambots-4.4.0-sources.jar
+2019-11-07 20:46:35,332 [Worker-25: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.telegram:telegrambots:4.4.0
+2019-11-07 20:46:35,515 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:46:35,516 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:46:35,518 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:46:35,519 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:46:48,039 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:46:48,040 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:46:48,041 [Worker-20: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:46:48,042 [Worker-20: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:48:06,071 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:48:06,073 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:48:06,074 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:48:06,075 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:48:19,742 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-07 20:48:20,106 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:48:20,124 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:48:20,132 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-snapshot/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:48:20,441 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ChatBot/src
+2019-11-07 20:48:20,441 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ChatBot/src/test/java because it overlaps with /ChatBot/src
+2019-11-07 20:48:20,503 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-07 20:48:20,636 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:48:20,636 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:48:20,638 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:48:20,639 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:49:14,383 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-07 20:49:14,741 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:49:14,758 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:49:14,766 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-snapshot/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:49:14,965 [Worker-21: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ChatBot/src
+2019-11-07 20:49:14,965 [Worker-21: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ChatBot/src/test/java because it overlaps with /ChatBot/src
+2019-11-07 20:49:15,049 [Worker-21: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-07 20:49:15,197 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:49:15,199 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:49:15,201 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:49:15,202 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:49:35,387 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:49:35,388 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:49:35,389 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:49:35,389 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:50:35,328 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-07 20:50:35,690 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:50:35,711 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:50:35,719 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-snapshot/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:50:35,888 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ChatBot/src
+2019-11-07 20:50:35,888 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ChatBot/src/test/java because it overlaps with /ChatBot/src
+2019-11-07 20:50:35,974 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-07 20:50:36,128 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:50:36,129 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:50:36,131 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:50:36,132 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:51:29,337 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:51:29,337 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:51:29,339 [Worker-23: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:51:29,340 [Worker-23: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:53:54,274 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-11-07 20:53:54,592 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:53:54,613 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:53:54,620 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-snapshot/org/telegram/Bots/4.4.0/Bots-4.4.0.pom
+2019-11-07 20:53:54,759 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ChatBot/src
+2019-11-07 20:53:54,759 [Worker-23: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /ChatBot/src/test/java because it overlaps with /ChatBot/src
+2019-11-07 20:53:54,825 [Worker-23: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-11-07 20:53:54,994 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:53:54,995 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:53:54,997 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:53:54,998 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:54:25,287 [Worker-26: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: ChatBot:ChatBot:1.0.0 @ C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\pom.xml.
+2019-11-07 20:54:25,434 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:25,435 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:54:25,437 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:25,438 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:54:26,689 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:26,690 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:54:26,691 [Worker-21: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:26,691 [Worker-21: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:54:31,530 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:31,531 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:54:31,532 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:31,533 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:54:42,376 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:42,377 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:54:42,378 [Worker-22: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:54:42,378 [Worker-22: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\test\resources
+2019-11-07 20:55:02,767 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-11-07 20:55:02,768 [Worker-26: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\JavaPlataformChatBot\ChatBot\src\main\resources
+2019-11-07 20:55:02,769 [Worker-26: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
